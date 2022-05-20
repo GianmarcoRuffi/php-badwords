@@ -3,7 +3,7 @@
 <?php
 $string = "Prima regola del fight club: non parlare mai del fight club.";
 $censored_str = str_replace ("fight club", "***** ****", $string);
-$string_esplosa = explode ('.', $string)
+$exploded_str = explode ('.', $string)
 ?>
 
 <!DOCTYPE html>
