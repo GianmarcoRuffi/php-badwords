@@ -17,12 +17,16 @@ $censored_str = str_replace ("fight club", "*** ***", $string);
 <body>
   
 <h2>Frase Integrale:</h2>
-  Frase:<p> <?php echo $string; ?> </p>
-  Lunghezza:<p> <?php echo strlen($string);?></p>
+<p> <?php echo $string; ?> </p>
+
+ <h2>Lunghezza Integrale:</h2>
+  <p> <?php echo strlen($string);?></p>
 
 <h2>Frase Censurata:</h2>
-  Frase:<p> <?php echo $censored_str; ?> </p>
-  Lunghezza:<p> <?php echo strlen($censored_str);?></p>
+  <p> <?php echo $censored_str; ?> </p>
+
+<h2>Lunghezza Censurata:</h2>
+  <p> <?php echo strlen($censored_str);?></p>
   
 </body>
 </html>
