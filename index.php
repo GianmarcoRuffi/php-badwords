@@ -2,8 +2,8 @@
 
 <?php
 $string = "Prima regola del fight club: non parlare mai del fight club.";
-$censored_str = str_replace ("fight club", "***** ****", $string);
-$exploded_str = explode ('.', $string)
+$censored_str = str_replace ("fight club", "*** ***", $string);
+// $exploded_str = explode ('.', $string)
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +17,12 @@ $exploded_str = explode ('.', $string)
 <body>
   
 <h2>Frase Integrale:</h2>
-  <p> <?php echo $string; ?> </p>
-  <p> <?php echo strlen($string);?></p>
+  Frase:<p> <?php echo $string; ?> </p>
+  Lunghezza:<p> <?php echo strlen($string);?></p>
 
 <h2>Frase Censurata:</h2>
-  <p> <?php echo $censored_str; ?> </p>
-  <p> <?php echo strlen($censored_str);?></p>
+  Frase:<p> <?php echo $censored_str; ?> </p>
+  Lunghezza:<p> <?php echo strlen($censored_str);?></p>
   
 </body>
 </html>
