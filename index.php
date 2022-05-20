@@ -1,13 +1,11 @@
-
-
 <?php
-$badword = isset($_GET['badword']) ? $_GET['badword'] : '';
+$badword = isset($_GET['badword']) ? $_GET['badword'] : 'Utilizza "?badword=" nella barra di ricerca per censurare la parola.';
 $string = "Prima regola del fight club: non parlare mai del fight club.";
 $censored_str = str_replace ($badword, "****", $string);
 
 
 
-// $exploded_str = explode ('.', $string)
+
 ?>
 
 <!DOCTYPE html>
