@@ -1,8 +1,12 @@
 
 
 <?php
+$badword = isset($_GET['badword']) ? $_GET['badword'] : '';
 $string = "Prima regola del fight club: non parlare mai del fight club.";
-$censored_str = str_replace ("fight club", "*** ***", $string);
+$censored_str = str_replace ($badword, "****", $string);
+
+
+
 // $exploded_str = explode ('.', $string)
 ?>
 
